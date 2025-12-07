@@ -13,7 +13,7 @@ public class arrayrow {
 
     static int[] search(int [][] matrix, int target){
         int r = 0;
-        int c = matrix[0].length - 1; // FIX 1: last column
+        int c = matrix[0].length - 1; 
 
         while (r < matrix.length && c >= 0) {
 
@@ -22,12 +22,12 @@ public class arrayrow {
             }
 
             if(matrix[r][c] < target){
-                r++;                   // move down
+                r++;                   
             } else {
-                c--;                   // FIX 2: move left
+                c--;                   
             }
         }
 
-        return new int[]{-1, -1};     // FIX 3: return if not found
+        return new int[]{-1, -1};     
     }
 }
